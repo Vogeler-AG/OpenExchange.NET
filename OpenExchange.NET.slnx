@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="OpenExchange.BitcoinDe/OpenExchange.BitcoinDe.csproj" Id="7ea210b4-3be6-4497-a8f8-8e22f77456a6" />
+  <Project Path="OpenExchange.Security/OpenExchange.Security.csproj" Id="d81ffead-1380-4d6e-9ded-319dc7a21263" />
+  <Project Path="src/OpenExchange.Core/OpenExchange.Core.csproj" Id="6d412985-b4d4-497f-a877-2979853dbf77" />
+</Solution>
