@@ -1,11 +1,12 @@
-﻿using System;
+﻿using OpenExchange.Core.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace OpenExchange.BitcoinDe.Authentication
 {
-    public class BitcoinDeRequestSigner
+    public class BitcoinDeRequestSigner : IRequestSigner
     {
         private readonly string _apiSecret;
 
