@@ -6,6 +6,6 @@ namespace OpenExchange.Core.Interfaces
 {
     public interface IRequestSigner
     {
-        void Sign(HttpRequestMessage request)
+        void Sign(HttpRequestMessage request);
     }
 }
