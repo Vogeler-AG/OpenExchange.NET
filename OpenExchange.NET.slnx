@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="OpenExchange.BitcoinDe/OpenExchange.BitcoinDe.csproj" Id="7ea210b4-3be6-4497-a8f8-8e22f77456a6" />
-  <Project Path="OpenExchange.Security/OpenExchange.Security.csproj" Id="d81ffead-1380-4d6e-9ded-319dc7a21263" />
+  <Project Path="src/OpenExchange.BitcoinDe/OpenExchange.BitcoinDe.csproj" Id="03d117cd-dd5e-45ab-a729-8e9daec3fe7f" />
   <Project Path="src/OpenExchange.Core/OpenExchange.Core.csproj" Id="6d412985-b4d4-497f-a877-2979853dbf77" />
+  <Project Path="src/OpenExchange.Security/OpenExchange.Security.csproj" Id="0b343afb-147d-420b-8589-a0f8a1941c2c" />
 </Solution>
