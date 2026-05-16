@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="OpenExchange.BitcoinDe/OpenExchange.BitcoinDe.csproj" />
+  <Project Path="OpenExchange.Core/OpenExchange.Core.csproj" />
+  <Project Path="OpenExchange.Security/OpenExchange.Security.csproj" />
+</Solution>
