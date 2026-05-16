@@ -11,4 +11,8 @@
     <ProjectReference Include="..\OpenExchange.Security\OpenExchange.Security.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
 </Project>
