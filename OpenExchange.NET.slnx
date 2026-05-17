@@ -9,5 +9,6 @@
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/OpenExchange.BitcoinDe.Tests/OpenExchange.BitcoinDe.Tests.csproj" Id="6dde681f-3446-4d1d-aa8f-775771e82f75" />
+    <Project Path="tests/OpenExchange.Security.Tests/OpenExchange.Security.Tests.csproj" Id="4be28b9a-e681-4e2f-91be-a67d32c19997" />
   </Folder>
 </Solution>
