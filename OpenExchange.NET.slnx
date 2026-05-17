@@ -7,4 +7,7 @@
     <Project Path="src/OpenExchange.Core/OpenExchange.Core.csproj" Id="6d412985-b4d4-497f-a877-2979853dbf77" />
     <Project Path="src/OpenExchange.Security/OpenExchange.Security.csproj" Id="0b343afb-147d-420b-8589-a0f8a1941c2c" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OpenExchange.BitcoinDe.Tests/OpenExchange.BitcoinDe.Tests.csproj" Id="6dde681f-3446-4d1d-aa8f-775771e82f75" />
+  </Folder>
 </Solution>
