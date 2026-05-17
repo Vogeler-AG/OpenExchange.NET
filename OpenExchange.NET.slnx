@@ -1,5 +1,13 @@
 <Solution>
-  <Project Path="src/OpenExchange.BitcoinDe/OpenExchange.BitcoinDe.csproj" Id="03d117cd-dd5e-45ab-a729-8e9daec3fe7f" />
-  <Project Path="src/OpenExchange.Core/OpenExchange.Core.csproj" Id="6d412985-b4d4-497f-a877-2979853dbf77" />
-  <Project Path="src/OpenExchange.Security/OpenExchange.Security.csproj" Id="0b343afb-147d-420b-8589-a0f8a1941c2c" />
+  <Folder Name="/samples/">
+    <Project Path="samples/BasicConsoleSample/BasicConsoleSample.csproj" Id="bc5e8cec-1a40-439f-99e7-698aecfb4861" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/OpenExchange.BitcoinDe/OpenExchange.BitcoinDe.csproj" Id="03d117cd-dd5e-45ab-a729-8e9daec3fe7f" />
+    <Project Path="src/OpenExchange.Core/OpenExchange.Core.csproj" Id="6d412985-b4d4-497f-a877-2979853dbf77" />
+    <Project Path="src/OpenExchange.Security/OpenExchange.Security.csproj" Id="0b343afb-147d-420b-8589-a0f8a1941c2c" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OpenExchange.Security.Tests/OpenExchange.BitcoinDe.Tests/OpenExchange.BitcoinDe.Tests.csproj" Id="98541646-bb4d-4a78-a598-f9593cb1dfa0" />
+  </Folder>
 </Solution>

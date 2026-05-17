@@ -192,6 +192,24 @@ OpenExchange.NET aims to improve interoperability and reusability across heterog
 
 ---
 
+# Quick Start
+
+```csharp
+            ICredentialProvider cred= new EnvironmentCredentialProvider("BitcoinDeApiKey","BitcoinDeApiSecret");
+            IExchangeClient client = new BitcoinDeClient(cred);
+            Ticker ticker=await client.GetTickerAsync("btceur");
+            Console.WriteLine($"BTC/EUR Last Price: {ticker.Last}");
+```
+
+See:
+
+```text
+samples/BasicConsoleSample
+```
+
+---
+
+
 # Why Open Source?
 
 Reliable financial infrastructure benefits from:
@@ -231,3 +249,6 @@ Licensed under the Apache License 2.0.
 OpenExchange.NET is infrastructure software.
 
 It does not provide financial advice, trading strategies, or investment recommendations.
+
+Never commit API keys or secrets to source control.
+Use environment variables, user secrets, or a secure secret store.

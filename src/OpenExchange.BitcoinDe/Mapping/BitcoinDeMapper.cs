@@ -8,20 +8,12 @@ namespace OpenExchange.BitcoinDe.Mapping
 {
     public class BitcoinDeMapper
     {
-        public static Ticker MapTicker(
-            BitcoinDeTickerResponse dto)
+        public static Ticker MapTicker(BitcoinDeTickerResponse dto)
         {
             return new Ticker
             {
-                Symbol = "BTC/EUR",
-
-                Bid = decimal.Parse(dto.Bid ?? "0"),
-
-                Ask = decimal.Parse(dto.Ask ?? "0"),
-
-                Last = decimal.Parse(dto.Last ?? "0"),
-
-                Volume = decimal.Parse(dto.Volume ?? "0"),
+                Symbol = dto.trading_pair,
+                Last = dto.rates.rate_weighted,
 
                 Timestamp = DateTimeOffset.UtcNow
             };

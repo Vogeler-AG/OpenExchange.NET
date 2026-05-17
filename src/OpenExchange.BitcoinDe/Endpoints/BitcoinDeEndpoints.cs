@@ -8,7 +8,7 @@ namespace OpenExchange.BitcoinDe.Endpoints
     {
         public static string GetTicker(string symbol)
         {
-            return $"/v4/{symbol}/ticker";
+            return $"/v4/{symbol}/rates";
         }
 
         public static string GetOrderBook(string symbol)

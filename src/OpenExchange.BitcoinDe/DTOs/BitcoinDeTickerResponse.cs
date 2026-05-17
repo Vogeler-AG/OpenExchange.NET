@@ -4,14 +4,9 @@ using System.Text;
 
 namespace OpenExchange.BitcoinDe.DTOs
 {
-    public class BitcoinDeTickerResponse
+    public class BitcoinDeTickerResponse: BitcoindDeResponseBase
     {
-        public string? Bid { get; set; }
-
-        public string? Ask { get; set; }
-
-        public string? Last { get; set; }
-
-        public string? Volume { get; set; }
+        public string trading_pair { get; set; } = null!;
+        public BitcoinDeRate rates { get; set; }
     }
 }

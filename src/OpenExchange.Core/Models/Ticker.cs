@@ -6,16 +6,34 @@ namespace OpenExchange.Core.Models
 {
     public class Ticker
     {
+        /// <summary>
+        /// Markt / Trading Pair
+        /// </summary>
         public string Symbol { get; set; } = string.Empty;
 
-        public decimal Bid { get; set; }
+        /// <summary>
+        /// max. Buy price
+        /// </summary>
+        public decimal? Bid { get; set; }
 
-        public decimal Ask { get; set; }
+        /// <summary>
+        /// lowest sell price
+        /// </summary>
+        public decimal? Ask { get; set; }
 
-        public decimal Last { get; set; }
+        /// <summary>
+        /// last price
+        /// </summary>
+        public decimal? Last { get; set; }
+        
+        /// <summary>
+        /// trading volume
+        /// </summary>
+        public decimal? Volume { get; set; }
 
-        public decimal Volume { get; set; }
-
+        /// <summary>
+        /// Timestamp
+        /// </summary>
         public DateTimeOffset Timestamp { get; set; }
     }
 }

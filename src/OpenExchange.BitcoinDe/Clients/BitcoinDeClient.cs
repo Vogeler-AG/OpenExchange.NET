@@ -6,19 +6,35 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http.Json;
 using System.Text;
+using OpenExchange.BitcoinDe.Authentication;
 using OpenExchange.Core.Interfaces;
+using OpenExchange.Security.Credentials;
+using OpenExchange.Security.Http;
 
 namespace OpenExchange.BitcoinDe.Clients
 {
     public class BitcoinDeClient : IExchangeClient
     {
         private readonly HttpClient _httpClient;
-
+        private readonly ICredentialProvider _credentialProvider;
         public string Name => "bitcoin.de";
 
-        public BitcoinDeClient(HttpClient httpClient)
+        public BitcoinDeClient(ICredentialProvider credentialProvider, HttpClient httpClient)
         {
+            _credentialProvider = credentialProvider;
             _httpClient = httpClient;
+        }
+
+        public BitcoinDeClient(ICredentialProvider credentialProvider)
+        {
+            _credentialProvider = credentialProvider;
+            var signer = new BitcoinDeRequestSigner(_credentialProvider);
+            var signingHandler = new SigningHandler(signer)
+            {
+                InnerHandler = new HttpClientHandler()
+            };
+            _httpClient = new HttpClient(signingHandler);
+            _httpClient.BaseAddress = new Uri("https://api.bitcoin.de");
         }
 
         public async Task<Ticker> GetTickerAsync(

@@ -6,6 +6,6 @@ namespace OpenExchange.Core.Interfaces
 {
     public interface IRequestSigner
     {
-        void Sign(HttpRequestMessage request);
+        Task SignAsync(HttpRequestMessage request, CancellationToken cancellationToken = default);
     }
 }
