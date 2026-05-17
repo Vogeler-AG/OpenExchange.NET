@@ -7,32 +7,32 @@ namespace OpenExchange.Core.Models
     public class Ticker
     {
         /// <summary>
-        /// Markt / Trading Pair
+        /// Trading pair symbol (for example "BTC/EUR").
         /// </summary>
         public string Symbol { get; set; } = string.Empty;
 
         /// <summary>
-        /// max. Buy price
+        /// Highest bid price.
         /// </summary>
         public decimal? Bid { get; set; }
 
         /// <summary>
-        /// lowest sell price
+        /// Lowest ask price.
         /// </summary>
         public decimal? Ask { get; set; }
 
         /// <summary>
-        /// last price
+        /// Last traded price.
         /// </summary>
         public decimal? Last { get; set; }
         
         /// <summary>
-        /// trading volume
+        /// Trading volume during the observed period.
         /// </summary>
         public decimal? Volume { get; set; }
 
         /// <summary>
-        /// Timestamp
+        /// Timestamp of the ticker snapshot.
         /// </summary>
         public DateTimeOffset Timestamp { get; set; }
     }

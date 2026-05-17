@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OpenExchange.BitcoinDe.Endpoints
 {
-    public class BitcoinDeEndpoints
+    public static class BitcoinDeEndpoints
     {
         public static string GetTicker(string symbol)
         {

@@ -18,6 +18,12 @@ namespace OpenExchange.BitcoinDe.Authentication
             _credentialProvider = credentialProvider;
         }
 
+        /// <summary>
+        /// Sign the outgoing HTTP request for the bitcoin.de API by adding the
+        /// required X-API-KEY, X-API-NONCE and X-API-SIGNATURE headers.
+        /// </summary>          
+        /// <param name="request">The request to sign. The method will throw if RequestUri is null.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
         public async Task SignAsync(HttpRequestMessage request, CancellationToken cancellationToken = default)
         {
             if (request.RequestUri == null)
@@ -58,7 +64,6 @@ namespace OpenExchange.BitcoinDe.Authentication
 
         private long CreateNonce()
         {
-            //var timestampNonce = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
             var timestampNonce = DateTime.Now.Ticks;
 
             while (true)

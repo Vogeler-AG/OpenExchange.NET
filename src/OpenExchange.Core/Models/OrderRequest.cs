@@ -4,6 +4,9 @@ using System.Text;
 
 namespace OpenExchange.Core.Models
 {
+    /// <summary>
+    /// Represents a request to place an order in the trading system.
+    /// </summary>
     public class OrderRequest
     {
         public string Symbol { get; set; } = string.Empty;

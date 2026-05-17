@@ -6,7 +6,7 @@ using System.Text;
 
 namespace OpenExchange.BitcoinDe.Mapping
 {
-    public class BitcoinDeMapper
+    public static class BitcoinDeMapper
     {
         public static Ticker MapTicker(BitcoinDeTickerResponse dto)
         {

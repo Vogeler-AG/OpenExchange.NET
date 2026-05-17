@@ -5,7 +5,7 @@ using OpenExchange.Security.Credentials;
 
 namespace BasicConsoleSample
 {
-    internal class Program
+    internal static class Program
     {
         static async Task Main(string[] args)
         {

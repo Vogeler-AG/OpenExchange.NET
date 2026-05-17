@@ -13,18 +13,32 @@ using OpenExchange.Security.Http;
 
 namespace OpenExchange.BitcoinDe.Clients
 {
+    /// <summary>
+    /// A concrete exchange client implementation for the bitcoin.de API.
+    /// Provides market data and trading operations for bitcoin.de.
+    /// </summary>
     public class BitcoinDeClient : IExchangeClient
     {
         private readonly HttpClient _httpClient;
         private readonly ICredentialProvider _credentialProvider;
+
+        /// <inheritdoc/>
         public string Name => "bitcoin.de";
 
+        /// <summary>
+        /// Create a new client using an externally configured <see cref="HttpClient"/>.
+        /// </summary>
         public BitcoinDeClient(ICredentialProvider credentialProvider, HttpClient httpClient)
         {
             _credentialProvider = credentialProvider;
             _httpClient = httpClient;
         }
 
+        /// <summary>
+        /// Create a new client and configure a default <see cref="HttpClient"/>
+        /// with the signing handler that signs requests using the provided
+        /// credential provider.    
+        /// </summary>
         public BitcoinDeClient(ICredentialProvider credentialProvider)
         {
             _credentialProvider = credentialProvider;
