@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\OpenExchange.BitcoinDe\OpenExchange.BitcoinDe.csproj" />
-    <ProjectReference Include="..\..\..\src\OpenExchange.Core\OpenExchange.Core.csproj" />
+    <ProjectReference Include="..\..\src\OpenExchange.BitcoinDe\OpenExchange.BitcoinDe.csproj" />
+    <ProjectReference Include="..\..\src\OpenExchange.Core\OpenExchange.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
